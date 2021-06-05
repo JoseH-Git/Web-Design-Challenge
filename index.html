@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Web-Design-Challenge</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-
+      <meta charset="UTF-8">
+      <title>Web-Design-Challenge</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-lightbackground-color: #ffffff!important;">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Latitude</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -22,68 +21,58 @@
               Plots
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity/</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
             </ul>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
-            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <h1>Whether Visualization Dashboard</h1>
 
-  <a target="_blank" href="Images/equatorsign.png">
-  <img width = 500 src="Images/equatorsign.png" alt="World Map">
-  </a>
-  <p><em>equatorsign</em></p>
+  <div class="container">
+    <div class="row">
+            <div class="Panel-body">
+                
+                <h2>Summary: Latitude vs. X</h2>
+                <hr>
+                <img class="image" src="Images/Latitude vs. Temperature Plot.png" alt="Temperature" align="left" >
+                <p class="p1">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 5000 cities.</p>
+                <p class="p1">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                <br>
+            </div>
+    </div>
+    
+    <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="Panel-body">
+                
+                <h2>Visualizations</h2>
+                <hr>
 
-	<p>Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
-	Now, we know what you may be thinking: "Duh. It gets hotter..."
-	But, if pressed, how would you prove it?</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4"><a href="temperature.html"><img class="img img-responsive" src="Images/Latitude vs. Temperature Plot.png" style="width:100%" alt="Temperature"></a></div>
+                    <div class="ccol-sm-12 col-md-4 col-lg-4"><a href="humidity.html"><img class="img img-responsive" src="Images/Latitude vs. Humidity.png" style="width:100%" alt="Humidity"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4"><a href="cloudiness.html"><img class="img img-responsive" src="Images/Cloudiness.png" style="width:100%" alt="Cloudiness"></a></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4"><a href="windspeed.html"><img class="img img-responsive" src="Images/Latitude vs. Wind Speed Plot.png" style="width:100%" alt="Wind Speed"></a></div>
+                </div>
+        </div>
+    </div>
+</div>
 
-
-
-
-  <ul>
-    <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-    <li><strong>Twitter:</strong> <a href="#">@josesierra3</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
-
-  <!-- Bonus link to last class page -->
-  <a href="../../../../1/Activities/04-Stu_MyFirst_HTML/Solved/my-first-bonus.html">My First HTML Bonus</a>
-
+<button type="button" class="btn btn-link">Link</button>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
