@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Comparison | Latitude vs X</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
   </head>
 
 <body>
@@ -18,14 +18,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                 Plots
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="humidity.html">Humidity/</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
                   <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
+                <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -40,53 +40,42 @@
   </nav>
     
   <div class="container">
-    
     <div class="row">
-      <div class="col-md-12"></div>  
-        <br> 
-        <h3>Comparison: Latitud vs X</h3>
-        <br>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-12"></div>  
-        <p>Click any plot to get an in-depth analysis</p>  
-        <br>
-    </div>
-                          
-    <div class="row">
-      <div class="col-sm-12 col-md-4 col-lg-4"></div>
-      <h3>vs. Max Temperature</h3>
-      <a href="temperature.html"><img class="img img-responsive" src="Images/Latitude vs. Temperature Plot.png" style="width:100%" alt="Temperature"></a>
-      <br>
-    </div>
-            
-    <div class="row">
-      <div class="col-md-4">      
-        <h3>vs. Humidity</h3>                  
-        <a href="humidity.html"><img class="img img-responsive" src="Images/Latitude vs. Humidity Plot.png" style="width:100%" alt="Humidity"></a></div>
+      <div class="Panel-body">
+        <div class="col-md-12"></div>
+          <br>
+          <h2>Comparison: Latitud vs X</h2>
+          <hr>
+          <p>Click any plot to get an in-depth analysis</p> 
+          <br>
       </div>
-        
-      <div class="col-md-4">   
-        <h3>vs. Cloudiness</h3>  
-        <a href="cloudiness.html"><img class="img img-responsive" src="Images/Latitude vs. Cloudiness Plot.png" style="width:100%" alt="Cloudiness"></a></div>
-      </div>
-                  
-      <div class="col-md-4">
-        <h3>vs. Wind Speed</h3>
-        <a href="windspeed.html"><img class="img img-responsive" src="Images/Latitude vs. Wind Speed Plot.png" style="width:100%" alt="Wind Speed"></a></div>
-      </div>
-                  
-    <div class="row">
-        <div class="col-md-12"
-          <p> class="p1">There is no clear relationship. Also, we can see more points as the latitud goes higher.</p>
+    </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4> vs. Max Temperature</h4>
+          <div class="col-sm-12 col-md-6 col-lg-6"><a href="temperature.html"><img class="img img-responsive" src="Images/Latitude vs. Temperature Plot.png" style="width:100%" alt="Temperature"></a></div>
         </div>
+        <div class="col-md-6">
+          <h4> vs. Humidity</h4>  
+          <div class="col-sm-12 col-md-6 col-lg-6"><a href="humidity.html"><img class="img img-responsive" src="Images/Latitude vs. Humidity Plot.png" style="width:100%" alt="Humidity"></a></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4> vs. Cloudiness</h4> 
+          <div class="col-sm-12 col-md-6 col-lg-6"><a href="cloudiness.html"><img class="img img-responsive" src="Images/Latitude vs. Cloudiness Plot.png" style="width:100%" alt="Cloudiness"></a></div>
+        </div>
+        <div class="col-md-6">
+          <h4> vs. windspeed</h4> 
+          <div class="col-sm-12 col-md-6 col-lg-6"><a href="windspeed.html"><img class="img img-responsive" src="Images/Latitude vs. Wind Speed Plot.png" style="width:100%" alt="Wind Speed"></a></div>
+        </div>
+      </div>
     </div>
   </div>
-  
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

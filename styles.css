@@ -1,34 +1,42 @@
 
-/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+/* Giving the body the specified background color */
 body {
-  background: #f1f1f1;
+  background-color: #f7efefde;
 }
 
-h1 {
-  font-size: 80px;
-  color: #5191fd
+/* adding font sizes for the h1 and h3 elements we'll be using */
+h2 {
+  /* font-size: 80px; */
+  color: #0ebedd; 
 }
 
 h3 {
-  font-size: 30px;
+  color: #0ebedd;
 }
 
+h4 {
+  color: #0ebedd;
+  text-align: center;
+}
+
+
 /* Giving our navbar some padding and a background color */
-.navbar {
-  padding: 10px;
-  background: #5191fd;
+.navbar-brand {
+  /* padding: 10px; */
+  background: #0ebedd;
+  color: rgb(255, 255, 255);
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-.navbar li {
+/* .navbar li {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   margin-right: 10px;
   margin-left: 10px;
   cursor: pointer;
-  background: #fff;
+  background: ##08bd69;
   border-radius: 3px;
-}
+} */
 
 /* Getting rid of the default link styles here */
 .navbar li a {
@@ -44,10 +52,17 @@ h3 {
 }
 
 /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
-.header h1 {
+.header h2 {
   padding: 60px;
   margin: 0;
   color: #000;
+  text-align: center;
+}
+
+.header h4 {
+  padding: 20px;
+  margin: 0;
+  color: #cdcdcd;
   text-align: center;
 }
 

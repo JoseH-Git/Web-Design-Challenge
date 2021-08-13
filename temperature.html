@@ -4,68 +4,66 @@
         <meta charset="UTF-8">
         <title>Visualization | Latitude vs Temperature</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="humidity.html">Humidity/</a></li>
-                  <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="comparison.html">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="data.html">Data</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <br>
+        <h2>Max Temperature</h2>
+        <hr>
+        <img class="image" src="Images/Latitude vs. Temperature Plot.png" alt="Temperature"style="width:70%" align ="center" >
+        <br>
+        <p class="p1">As expected, the weather becomes significatly warmer as one aproaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere trends 
+          to be warmer this time of the year than northen emisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+        </p>
+        <br>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <h4>Visualizations</h4>
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col-3 col-sm-6 col-md-6"><a href="temperature.html"><img class="img img-responsive" src="Images/Latitude vs. Temperature Plot.png" style="width:100%" alt="Temperature"></a></div>
+          <div class="col-3 col-sm-6 col-md-6"><a href="humidity.html"><img class="img img-responsive" src="Images/Latitude vs. Humidity Plot.png" style="width:100%" alt="Humidity"></a></div>
+          <div class="col-3 col-sm-6 col-md-6"><a href="cloudiness.html"><img class="img img-responsive" src="Images/Latitude vs. Cloudiness Plot.png" style="width:100%" alt="Cloudiness"></a></div>
+          <div class="col-3 col-sm-6 col-md-6"><a href="windspeed.html"><img class="img img-responsive" src="Images/Latitude vs. Wind Speed Plot.png" style="width:100%" alt="Wind Speed"></a></div>
         </div>
       </div>
-    </nav>
-    
-    <div class="container">
-        <div class="row">
-                <div class="Panel-body">
-                    <br>
-                    <h2>Temperature</h2>
-                    <hr>
-                    <img class="image" src="Images/Latitude vs. Temperature Plot.png" alt="Temperature" align="left" >
-                    <br>
-                    <p class="p1">The closer to 0 (ecuator) the higher the temperature. The far away from 0 (ecuator) the lower the temperature.</p>
-                    <br>
-                </div>
-        
-        <div class="col-sm-12 col-md-8 col-lg-8">
-          <div class="Panel-body">
-              
-              <h2>Visualizations</h2>
-              <hr>
-
-              <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4"><a href="temperature.html"><img class="img img-responsive" src="Images/Latitude vs. Temperature Plot.png" style="width:100%" alt="Temperature"></a></div>
-                  <div class="ccol-sm-12 col-md-4 col-lg-4"><a href="humidity.html"><img class="img img-responsive" src="Images/Latitude vs. Humidity Plot.png" style="width:100%" alt="Humidity"></a></div>
-              </div>
-              <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4"><a href="cloudiness.html"><img class="img img-responsive" src="Images/Latitude vs. Cloudiness Plot.png" style="width:100%" alt="Cloudiness"></a></div>
-                  <div class="col-sm-12 col-md-4 col-lg-4"><a href="windspeed.html"><img class="img img-responsive" src="Images/Latitude vs. Wind Speed Plot.png" style="width:100%" alt="Wind Speed"></a></div>
-              </div>
-        </div>
   </div>
         </div>
     </div>
